@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fragment.Monday" >
+
+    <ScrollView
+        android:id="@+id/SC_TrainingPlan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backgroundweekplantraning" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/HoursLayout"
+                android:layout_width="100dip"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="4px"
+                android:layout_marginBottom="15dp" >
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/TrainLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/HoursLayout"
+                android:orientation="horizontal"
+                android:layout_marginBottom="15dp" >
+
+                <!--
+            <RelativeLayout
+                android:id="@+id/linearLayoutMonday"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:orientation="vertical" >
+            </RelativeLayout>
+                -->
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

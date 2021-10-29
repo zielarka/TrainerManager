@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrundplanntraning"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/LN_Edit_traningsresults"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="#00000000"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/NameResultsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textStyle="bold"
+            android:textSize="15dip"
+            android:text="Opis Rezultatu" />
+
+        <EditText
+            android:id="@+id/NameTraningEditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:textStyle="bold"
+            android:textSize="15dip"
+            android:layout_below="@+id/NameResultsTextView" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/AmountTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="15dip"
+            android:layout_below="@+id/NameTraningEditText"
+            android:text="Ilość" />
+
+        <EditText
+            android:id="@+id/AmountEditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:textStyle="bold"
+            android:textSize="15dip"
+            android:layout_below="@+id/AmountTextView"
+            android:inputType="phone" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/TypeOfUnitTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="15dip"
+            android:layout_below="@+id/AmountEditText"
+            android:text="Typ" />
+
+        <Spinner
+            android:id="@+id/spinnerTypeOfUnit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/TypeOfUnitTextView"
+            android:background="@drawable/spinnerweektype"
+            android:layout_marginBottom="2dp"    
+            android:spinnerMode="dropdown" />
+
+        <Button
+            android:id="@+id/AddResultsTraningBTN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/spinnerTypeOfUnit"
+            android:background="@drawable/buttonplantraingtargets"  
+            android:text="Dodaj rezultat trenigu" />
+
+        <ScrollView
+            android:id="@+id/ScrollView_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/AddResultsTraningBTN"
+            android:background="#00000000" >
+
+            <LinearLayout
+                android:id="@+id/LinearLayoutResults"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LN_BTN_saveTranings"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_below="@+id/LN_Edit_tranings"
+        android:layout_weight="0.3"
+        android:background="@drawable/backgrundplanntraning"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/SaveTraninigResults"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/butonzaplanujtrenig"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:text="Zapisz rezultaty trenigu"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>

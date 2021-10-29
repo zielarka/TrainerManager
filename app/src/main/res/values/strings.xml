@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Trainer Manager</string>
+
+
+    <!--     MAIN ACTIVTY test -->
+
+    <!--       -->
+
+    <!--     STOPWATCH -->
+
+    <!--       -->
+
+    <!--     TEMPOMETR -->
+
+    <!--       -->
+
+    <!--     MY TRAINING PLAN -->
+
+    <!--       -->
+
+    <!--     PLAN TRENING -->
+
+    <!--       -->
+
+
+    <!--     SHARE PLAN -->
+
+    <!--       -->
+
+
+    <!--     DOWNLOAD PLAN -->
+
+    <!--       -->
+
+    <!--     ADD RESULTS TRANING -->
+
+    <!--       -->
+
+    <!--     ADD TARGETS TRANING -->
+
+    <!--       -->
+
+
+
+
+
+    <!--     QRALERT -->
+    <string name="TitleTempometr"> Tempometr</string>
+    <string name="Titlestatus">Register successful!</string>
+    <!--       -->
+
+
+    <string name="hello_world">Hello world!</string>
+    <string name="one">1</string>
+    <string name="title_activity_tempometr">Tempometr</string>
+    <string name="title_activity_my_records_menu">MyRecordsMenu</string>
+    <string name="fileNameTrainings">fileNameTrainings.txt</string>
+    <string name="treningType1">Woda</string>
+    <string name="treningType2">Siłownia</string>
+    <string name="treningType3">Basen</string>
+    <string name="treningType4">Bieg</string>
+    <string name="treningType5">Wolne</string>
+    <string name="treningType6">Pomiar wagi</string>
+    <string name="treningType7">Orbitrek- średnio-intesywnie</string>
+    <string name="treningType8">Orbitrek- intesywnie</string>
+    <string name="treningType9"></string>
+    <string name="Monday">Poniedziałek</string>
+    <string name="Tuesday">Wtorek</string>
+    <string name="Wednesday">Środa</string>
+    <string name="Thursday">Czwartek</string>
+    <string name="Friday">Piątek</string>
+    <string name="Saturady">Sobota</string>
+    <string name="Sunday">Niedziela</string>
+    <string name="title_activity_main_menu">MainMenu</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_my_training_plan">MyTrainingPlan</string>
+    <string name="title_activity_monday">Monday</string>
+    <string name="title_activity_tuesday">Tuesday</string>
+    <string name="title_activity_wednesday">Wednesday</string>
+    <string name="title_activity_thursday">Thursday</string>
+    <string name="title_activity_friday">Friday</string>
+    <string name="title_activity_saturday">Saturday</string>
+    <string name="title_activity_sunday">Sunday</string>
+    <string name="title_activity_stopwatch">Stopwatch</string>
+    <string name="title_activity_metronome">Metronome</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="km">[km]</string>
+    <string name="kg">[kg]</string>
+    <string name="ton">[ton]</string>
+    <string name="m">[m]</string>
+    <string name="speed">[km/h]</string>
+    <string name="pulse">[tętno]</string>
+    <string name="minutes">[min]</string>
+    <string name="hours">[h]</string>
+
+    <color name="yellow">#DEE054</color>
+    <color name="white">#FAFAFA</color>
+    <color name="orange">#946200</color>
+
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="bps">bps</string>
+    <string name="timesignature">time signature</string>
+    <string name="dash">/</string>
+    <string name="volume">volume</string>
+
+    <color name="black">#000000</color>
+	<color name="gray">#9E9E9E</color>
+    <string name="title_activity_my_record_menu">MyRecordMenu</string>
+    <string name="title_activity_add_record">AddRecord</string>
+    <string name="title_activity_plann_traning">PlannTraning</string>
+    <string name="title_activity_add_targets_traning">AddTargetsTraning</string>
+    <string name="title_activity_add_results_traning">AddResultsTraning</string>
+    <string name="title_activity_share_plan">SharePlan</string>
+    <string name="title_activity_download_plan">DownloadPlan</string>
+
+</resources>

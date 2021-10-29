@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.views.DownloadPlan"
+    android:descendantFocusability="beforeDescendants"
+    android:background="@drawable/backgrundplanntraning"
+														>
+
+    <TextView
+        android:id="@+id/TextView_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp" 
+        android:textStyle="bold"   
+        android:textSize="20dip"
+        android:text="Wpisz identyfikator planu treningowego:" />
+    
+        <EditText
+                android:id="@+id/EditText_pin"
+                android:layout_width="fill_parent"
+                android:layout_height="100dip"
+                android:textSize="40dip"
+                android:layout_below="@+id/TextView_Text"
+                 android:gravity="center"
+                 android:textStyle="bold"
+                 android:layout_marginBottom="8dp"    
+                android:inputType="phone" >
+            </EditText>
+            
+        <Button
+                android:id="@+id/BtnOK"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/EditText_pin"
+                android:onClick="onTimeClicked"
+                android:background="@drawable/buttonplantraing"
+                android:textStyle="bold"
+                android:text="Pobierz Trenig!" />
+
+</RelativeLayout>

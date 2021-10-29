@@ -1,0 +1,199 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.views.PlannTraning"
+    android:background="@drawable/backgrundplanntraning" >
+
+    <ScrollView
+        android:id="@+id/SC_ScrollDescriptionTraining"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/NameTraningTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"                
+                android:text="Nazwa:" />
+
+            <EditText
+                android:id="@+id/NameTraning"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/NameTraningTextView" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/textViewDays"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/NameTraning"
+                android:textStyle="bold"
+                android:text="Dzień Tygodnia:" />
+
+            <Button
+                android:id="@+id/DayWeekSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textViewDays"
+                android:background="@drawable/spinnerweektype"           
+                android:spinnerMode="dropdown"
+                android:onClick="onTimeClicked"
+                android:text="Dzień Tygodnia:"
+				/>
+
+            <TextView
+                android:id="@+id/tv_textViewDays"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+                android:layout_below="@id/DayWeekSpinner"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/StartTiemeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_textViewDays"
+                android:textStyle="bold"
+                android:text="Godzina Rozpoczęcia Trenigu:" />
+
+            <Button
+                android:id="@+id/timeBtnStart"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/StartTiemeTextView"
+                android:onClick="onTimeClicked"
+               	android:textStyle="bold"
+                android:background="@drawable/buttonplantraing"
+                android:text="Czas Rozpoczęcia Trenigu:" 
+                />
+
+            <TextView
+                android:id="@+id/LabelStartTraningTextViewDynamic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/timeBtnStart"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:textColor="#CCFF90"
+                android:text="00:00"
+                android:textSize="20dip" />
+
+            <TextView
+                android:id="@+id/EndTiemeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/LabelStartTraningTextViewDynamic"
+                android:textStyle="bold"
+                android:text="Godzina Zakonczenia Trenigu:" />
+
+            <Button
+                android:id="@+id/timeBtnEnd"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/EndTiemeTextView"
+                android:onClick="onTimeClicked"
+                android:textStyle="bold"
+                android:background="@drawable/buttonplantraing"
+                android:text="Czas Zakonczenia Trenigu: " />
+
+            <TextView
+                android:id="@+id/LabelEndTraningTextViewDynamic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/timeBtnEnd"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:textColor="#FF9800"
+                android:text="00:00"
+                android:textSize="20dip" />
+
+            <TextView
+                android:id="@+id/TypeTraningTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/LabelEndTraningTextViewDynamic"
+                android:textStyle="bold"
+                android:text="Typ Trenigu:" 
+          />
+
+            <Spinner
+                android:id="@+id/spinnerTypeTraning"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/TypeTraningTextView"
+                android:background="@drawable/spinnerweektype"   
+                android:gravity="center" 
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:id="@+id/DescriptionTraningTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinnerTypeTraning"
+                android:textStyle="bold"
+                android:text="Szczegóły Trenigu:" />
+
+            <EditText
+                android:id="@+id/DescriptionTraning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/DescriptionTraningTextView"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:textStyle="bold"
+                android:windowSoftInputMode="stateVisible"  >
+            </EditText>
+
+            <Button
+                android:id="@+id/TargetsTraning"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/DescriptionTraning"
+                android:background="@drawable/buttonplantraingtargets"  
+                android:layout_marginBottom="2dp"  
+                android:text="Cele Trenigowe" />
+
+            <Button
+                android:id="@+id/ResultTraning"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="false"
+                android:layout_below="@+id/TargetsTraning"
+                android:background="@drawable/buttonplantraingtargets"  
+                android:layout_marginBottom="2dp"    
+                android:text="Rezultaty Trenigu" />
+
+            <Button
+                android:id="@+id/SaveTraninig"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/ResultTraning"
+                android:background="@drawable/butonzaplanujtrenig"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:text="Dodaj trening do planu"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

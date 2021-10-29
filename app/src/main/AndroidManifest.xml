@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.trainmanager"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="23" />
+	
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--
+    
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+      <uses-permission android:name="android.permission.BODY_SENSORS" /> -->
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:theme="@style/Theme.AppCompat.NoActionBar" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.views.MainMenu"
+            android:label="@string/title_activity_main_menu"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.views.MyTrainingPlan"
+            android:label="@string/title_activity_my_training_plan"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.fragment.Monday"
+            android:label="@string/title_activity_monday"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.fragment.Tuesday"
+            android:label="@string/title_activity_tuesday"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.fragment.Wednesday"
+            android:label="@string/title_activity_wednesday"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.fragment.Thursday"
+            android:label="@string/title_activity_thursday"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.fragment.Friday"
+            android:label="@string/title_activity_friday"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.fragment.Saturday"
+            android:label="@string/title_activity_saturday"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.fragment.Sunday"
+            android:label="@string/title_activity_sunday"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.views.Stopwatch"
+            android:label="@string/title_activity_stopwatch"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.views.Tempometr"
+            android:label="@string/title_activity_tempometr"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.views.MyRecordMenu"
+            android:label="@string/title_activity_my_record_menu"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.Record.AddRecord"
+            android:label="@string/title_activity_add_record"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.views.PlannTraning"
+            android:label="@string/title_activity_plann_traning"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.views.AddTargetsTraning"
+            android:label="@string/title_activity_add_targets_traning"
+            >
+        </activity>
+        <activity
+            android:name="com.views.AddResultsTraning"
+            android:label="@string/title_activity_add_results_traning"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.views.SharePlan"
+            android:label="@string/title_activity_share_plan"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.views.DownloadPlan"
+            android:label="@string/title_activity_download_plan"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustPan" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    android:weightSum="4" >
+
+    <LinearLayout
+        android:id="@+id/Ln_BTNStoper0"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="0dp"
+        android:layout_weight="0.55"
+        android:background="#00000000"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:weightSum="1" >
+
+        <TextView
+            android:id="@+id/tvstoper"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="0:00:000"
+            android:textColor="#946200"
+            android:textSize="70dip"
+            android:textAlignment="gravity"
+            android:gravity="center"
+            android:textScaleX="1"
+            android:layout_weight="1" />
+        
+    </LinearLayout>
+    
+        <LinearLayout
+        android:id="@+id/Ln_BTNStoper1"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/Ln_BTNStoper0"
+        android:layout_height="0dp"
+        android:layout_weight="1.68"
+        android:background="#00000000"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:textAlignment="center"
+         >
+        
+    <ScrollView
+        android:id="@+id/laps_save"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"  
+        android:orientation="vertical"   
+        android:background="#00000000"
+        android:fillViewport="true" >
+
+            <LinearLayout
+                android:id="@+id/LN_et_laps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"                
+                android:background="#00000000"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    
+        
+            <LinearLayout
+        android:id="@+id/Ln_BTNStoper2"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/Ln_BTNStoper1"
+        android:layout_height="0dp"
+        android:layout_weight="1.6"
+        android:orientation="horizontal"
+        android:background="@drawable/stoperstart"
+        
+        android:gravity="center"
+        android:textAlignment="center"
+        android:weightSum="1" >
+
+       
+        
+     <Button
+            android:id="@+id/start"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.3"
+          	android:layout_marginBottom="10dp"
+            android:background="#00000000" />
+
+        <Button
+            android:id="@+id/lap"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.35"
+            android:layout_marginBottom="10dp"
+            android:typeface="monospace"
+            android:background="#00000000" />
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.3"
+           	android:layout_marginBottom="10dp"
+            android:background="#00000000" />
+    </LinearLayout>
+        
+            
+                <LinearLayout
+        android:id="@+id/Ln_BTNStoper3"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:background="@drawable/backmenuon"
+        android:weightSum="1" >
+
+            <Button
+            android:id="@+id/back_menu"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.5"
+            
+            android:background="#00000000" />
+            
+              <Button
+            android:id="@+id/Button_activty_screen"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.5"
+            android:background="#00000000" />
+        
+    </LinearLayout>
+            
+
+   
+      </LinearLayout>

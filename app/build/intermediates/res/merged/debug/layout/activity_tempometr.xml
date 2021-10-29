@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    android:weightSum="5" >
+
+    <LinearLayout
+        android:id="@+id/Ln_BTNTempo0"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_weight="0.7"
+        android:background="#00000000"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:textAlignment="center"
+        android:weightSum="1" >
+
+        <TextView
+            android:id="@+id/timerValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="0:00:000"
+            android:textColor="#946200"
+            android:textSize="60sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Ln_BTNTempo1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/Ln_BTNTempo0"
+        android:layout_weight="0.5"
+        android:background="#00000000"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:textAlignment="center" >
+
+        <TextView
+            android:id="@+id/bps"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.5"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/bps"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#946200"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/currentBeat"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/one"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#946200"
+            android:textSize="30sp"
+            android:typeface="monospace" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Ln_BTNTempo2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/Ln_BTNTempo1"
+        android:layout_weight="1.2"
+        android:background="@drawable/plusminustempo"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:textAlignment="center"
+        android:weightSum="1" >
+
+        <Button
+            android:id="@+id/minus"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background="#00000000"
+            android:onClick="onMinusClick"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/plus"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background="#00000000"
+            android:onClick="onPlusClick"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Ln_BTNTempo3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/Ln_BTNTempo2"
+        android:layout_weight="2.35"
+        android:background="@drawable/playtempo"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:textAlignment="center"
+        android:weightSum="1" >
+
+        <Button
+            android:id="@+id/startstop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:background="#00000000"
+            android:onClick="onStartStopClick" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Ln_BTNTempor4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/Ln_BTNTempo3"
+        android:layout_weight="0.25"
+        android:background="@drawable/backmenuon"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:textAlignment="center"
+        android:weightSum="1" >
+
+        <Button
+            android:id="@+id/back_menu_tempo"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.5"
+            android:background="#00000000" />
+
+        <Button
+            android:id="@+id/Button_activty_screen"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.5"
+            android:background="#00000000" />
+    </LinearLayout>
+
+</LinearLayout>
